@@ -1,0 +1,7 @@
+.location__info-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    max-width: 246px;
+    margin: 25px 15px 25px 21px;
+}

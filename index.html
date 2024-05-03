@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta name="author" content="Dmitriy Statnyy">
+        <link rel="stylesheet" href="./styles/index.css">
+        <title>Место</title>
+    </head>
+    <body class="page">
+        <header class="header">
+            <div class="header__logo"></div>
+        </header>
+        <main class="content">
+            <section class="account">
+                <div class="account__personal-card">
+                    <img class="account__avatar" src="./images/Jacques-Yves_Cousteau.jpg" alt="Аватар профиля">
+                    <div class="account__info">
+                        <h1 class="account__name">Жак-Ив Кусто</h1>
+                        <button class="account__edit-button" type="button" aria-label="Редактировать"></button>
+                        <p class="account__title">Исследователь океана</p>
+                    </div>
+                </div>
+                <button class="account__add-button" type="button" aria-label="Добавить карточку"></button>
+            </section>
+
+
+            <section class="cards">
+                <ul class="unmarked-list cards__locations-list">
+
+                    <li class="unmarked-list__item">
+                        <article class="location">
+                            <img class="location__image" src="./images/karachaevsk.jpg" alt="Фото Карачаевска">
+                            <div class="location__info-box">
+                                <h2 class="location__name">Карачаевск</h2>
+                                <button title="like_button" class="location__like-button location__like-button_active" type="button"></button>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="unmarked-list__item">
+                        <article class="location">
+                            <img class="location__image" src="./images/Albrus.jpg" alt="Фото горы Эльбрус">
+                            <div class="location__info-box">
+                                <h2 class="location__name">Гора Эльбрус</h2>
+                                <button title="like_button" class="location__like-button" type="button"></button>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="unmarked-list__item">
+                        <article class="location">
+                            <img class="location__image" src="./images/Dombai.jpg" alt="Фото Домбай">
+                            <div class="location__info-box">
+                                <h2 class="location__name">Домбай</h2>
+                                <button title="like_button" class="location__like-button" type="button"></button>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="unmarked-list__item">
+                        <article class="location">
+                            <img class="location__image" src="./images/Albrus.jpg" alt="Фото горы Эльбрус">
+                            <div class="location__info-box">
+                                <h2 class="location__name">Гора Эльбрус</h2>
+                                <button title="like_button" class="location__like-button" type="button"></button>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="unmarked-list__item">
+                        <article class="location">
+                            <img class="location__image" src="./images/Dombai.jpg" alt="Фото Домбай">
+                            <div class="location__info-box">
+                                <h2 class="location__name">Домбай</h2>
+                                <button title="like_button" class="location__like-button" type="button"></button>
+                            </div>
+                        </article>
+                    </li>
+
+                    <li class="unmarked-list__item">
+                        <article class="location">
+                            <img class="location__image" src="./images/karachaevsk.jpg" alt="Фото Карачаево-Черкессия">
+                            <div class="location__info-box">
+                                <h2 class="location__name">Карачаево-Черкессия</h2>
+                                <button title="like_button" class="location__like-button" type="button"></button>
+                            </div>
+                        </article>
+                    </li>
+                </ul>    
+            </section>
+        </main>
+
+        <footer class="footer">
+            <p class="footer__copyright" lang="en">
+                &copy;
+                2020 Mesto Russia
+            </p>
+        </footer>
+
+        <div class="popup">
+            <div class="popup__container">
+                <h3 class="popup__title">Редактировать профиль</h3>
+                <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+                <form class="popup__form" name="Edit-account" method="get">
+                    <input title="name" class="popup__input popup__input_type_name" type="text" name="name" value="Жак-Ив Кусто" placeholder="Имя">
+                    <input title="profession" class="popup__input popup__input_type_activity" type="text" name="activity" value="Исследователь океана" placeholder="Деятельность">
+                    <button type="submit" class="popup__save-button">Сохранить</button>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>
