@@ -4,7 +4,7 @@
     flex-wrap: wrap;
     align-content: center;
     align-items: baseline;
-    max-width: 336px;
+    max-width: 337px;
 }
 
 @media screen and (max-width: 1100px) {

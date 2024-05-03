@@ -20,3 +20,9 @@
     padding: 28px 0px 36px;
   }
 }
+
+@media screen and (min-width: 1281px) {
+  .page {
+    margin: auto;
+  }
+}
