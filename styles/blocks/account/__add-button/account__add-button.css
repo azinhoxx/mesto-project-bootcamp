@@ -3,11 +3,7 @@
   height: 50px;
   margin: 0;
   padding: 0;
-  background-image: url(../../../../images/plus.svg);
-  background-position: center;
-  background-repeat: no-repeat;
-  background-color: transparent;
-  background-size: 22px 22px;
+  background: url(../../../../images/plus.svg) center / 22px 22px no-repeat transparent;
   border: 2px solid #FFFFFF;
   border-radius: 2px;
   box-sizing: border-box;
