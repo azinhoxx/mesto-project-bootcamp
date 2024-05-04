@@ -9,7 +9,7 @@
 
 * CSS
 * HTML
-* JS (в процессе)
+* JS
 
 **Ссылка на GitHub Pages**
 
