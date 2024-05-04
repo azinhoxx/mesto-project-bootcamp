@@ -26,68 +26,7 @@
 
 
             <section class="cards">
-                <ul class="unmarked-list cards__locations-list">
-
-                    <li class="unmarked-list__item">
-                        <article class="location">
-                            <img class="location__image" src="./images/karachaevsk.jpg" alt="Фото Карачаевска">
-                            <div class="location__info-box">
-                                <h2 class="location__name">Карачаевск</h2>
-                                <button title="like_button" class="location__like-button location__like-button_active" type="button"></button>
-                            </div>
-                        </article>
-                    </li>
-
-                    <li class="unmarked-list__item">
-                        <article class="location">
-                            <img class="location__image" src="./images/Albrus.jpg" alt="Фото горы Эльбрус">
-                            <div class="location__info-box">
-                                <h2 class="location__name">Гора Эльбрус</h2>
-                                <button title="like_button" class="location__like-button" type="button"></button>
-                            </div>
-                        </article>
-                    </li>
-
-                    <li class="unmarked-list__item">
-                        <article class="location">
-                            <img class="location__image" src="./images/Dombai.jpg" alt="Фото Домбай">
-                            <div class="location__info-box">
-                                <h2 class="location__name">Домбай</h2>
-                                <button title="like_button" class="location__like-button" type="button"></button>
-                            </div>
-                        </article>
-                    </li>
-
-                    <li class="unmarked-list__item">
-                        <article class="location">
-                            <img class="location__image" src="./images/Albrus.jpg" alt="Фото горы Эльбрус">
-                            <div class="location__info-box">
-                                <h2 class="location__name">Гора Эльбрус</h2>
-                                <button title="like_button" class="location__like-button" type="button"></button>
-                            </div>
-                        </article>
-                    </li>
-
-                    <li class="unmarked-list__item">
-                        <article class="location">
-                            <img class="location__image" src="./images/Dombai.jpg" alt="Фото Домбай">
-                            <div class="location__info-box">
-                                <h2 class="location__name">Домбай</h2>
-                                <button title="like_button" class="location__like-button" type="button"></button>
-                            </div>
-                        </article>
-                    </li>
-
-                    <li class="unmarked-list__item">
-                        <article class="location">
-                            <img class="location__image" src="./images/karachaevsk.jpg" alt="Фото Карачаево-Черкессия">
-                            <div class="location__info-box">
-                                <h2 class="location__name">Карачаево-Черкессия</h2>
-                                <button title="like_button" class="location__like-button" type="button"></button>
-                            </div>
-                        </article>
-                    </li>
-                </ul>    
+                <ul class="unmarked-list cards__locations-list"></ul>    
             </section>
         </main>
 
@@ -98,10 +37,10 @@
             </p>
         </footer>
 
-        <div class="popup">
+        <div class="popup popup-edit">
             <div class="popup__container">
                 <h3 class="popup__title">Редактировать профиль</h3>
-                <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+                <button class="popup__close-button popup-edit__close-button" type="button" aria-label="Закрыть"></button>
                 <form class="popup__form" name="Edit-account" method="get">
                     <input title="name" class="popup__input popup__input_type_name" type="text" name="name" value="Жак-Ив Кусто" placeholder="Имя">
                     <input title="profession" class="popup__input popup__input_type_activity" type="text" name="activity" value="Исследователь океана" placeholder="Деятельность">
@@ -109,5 +48,29 @@
                 </form>
             </div>
         </div>
+
+        <div class="popup popup-add">
+            <div class="popup__container">
+                <h3 class="popup__title">Новое место</h3>
+                <button class="popup__close-button popup-add__close-button" type="button" aria-label="Закрыть"></button>
+                <form class="popup__form" name="Edit-account" method="get">
+                    <input title="name" class="popup__input popup__input_type_name" type="text" name="name" placeholder="Название">
+                    <input title="profession" class="popup__input popup__input_type_activity" type="text" name="activity" placeholder="Ссылка на картинку">
+                    <button type="submit" class="popup__save-button">Сохранить</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="popup popup-photo">
+            <div class="popup-photo__container">
+                <button class="popup__close-button popup-photo__close-button" type="button" aria-label="Закрыть"></button>
+                <img src="#" alt="Увеличенное изображение" class="popup__container-photo">
+                <p class="popup-photo__description"></p>
+            </div>
+        </div>
+        <script src="blocks/account/account.js"></script>
+        <script src="blocks/account/account__edit-button.js"></script>
+        <script src="blocks/account/account__add-button.js"></script>
+        <script src="blocks/location/location.js"></script>
     </body>
 </html>

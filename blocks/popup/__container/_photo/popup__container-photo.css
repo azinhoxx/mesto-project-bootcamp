@@ -1,0 +1,5 @@
+.popup__container-photo {
+    object-fit: cover;
+    max-width: 75.5vw;
+    max-height: 75.5vh;
+}
