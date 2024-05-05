@@ -26,7 +26,19 @@
 
 
             <section class="cards">
-                <ul class="unmarked-list cards__locations-list"></ul>    
+                <ul class="unmarked-list cards__locations-list"></ul>   
+                <template id="card-template">
+                    <li class="unmarked-list__item">
+                        <article class="location">
+                            <button class="location__delete-button" type="button" aria-label="Удалить"></button>
+                            <img class="location__image" src="#" alt="Фото">
+                            <div class="location__info-box">
+                                <h2 class="location__name">Название</h2>
+                                <button title="Лайк" class="location__like-button" type="button"></button>
+                            </div>
+                        </article>
+                        </li>
+                </template> 
             </section>
         </main>
 
@@ -40,8 +52,8 @@
         <div class="popup popup-edit">
             <div class="popup__container">
                 <h3 class="popup__title">Редактировать профиль</h3>
-                <button class="popup__close-button popup-edit__close-button" type="button" aria-label="Закрыть"></button>
-                <form class="popup__form" name="Edit-account" method="get">
+                <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+                <form class="popup__form" id="profile-form" name="Edit-account" method="get">
                     <input title="name" class="popup__input popup__input_type_name" type="text" name="name" value="Жак-Ив Кусто" placeholder="Имя">
                     <input title="profession" class="popup__input popup__input_type_activity" type="text" name="activity" value="Исследователь океана" placeholder="Деятельность">
                     <button type="submit" class="popup__save-button">Сохранить</button>
@@ -52,8 +64,8 @@
         <div class="popup popup-add">
             <div class="popup__container">
                 <h3 class="popup__title">Новое место</h3>
-                <button class="popup__close-button popup-add__close-button" type="button" aria-label="Закрыть"></button>
-                <form class="popup__form" name="Edit-account" method="get">
+                <button class="popup__close-button" type="button" aria-label="Закрыть"></button>
+                <form class="popup__form" id="card-form" name="Edit-account" method="get">
                     <input title="name" class="popup__input popup__input_type_name" type="text" name="name" placeholder="Название">
                     <input title="profession" class="popup__input popup__input_type_activity" type="text" name="activity" placeholder="Ссылка на картинку">
                     <button type="submit" class="popup__save-button">Сохранить</button>
@@ -68,9 +80,9 @@
                 <p class="popup-photo__description"></p>
             </div>
         </div>
-        <script src="blocks/account/account.js"></script>
-        <script src="blocks/account/account__edit-button.js"></script>
-        <script src="blocks/account/account__add-button.js"></script>
-        <script src="blocks/location/location.js"></script>
+        <script src="scripts/account.js"></script>
+        <script src="scripts/account__edit-button.js"></script>
+        <script src="scripts/account__add-button.js"></script>
+        <script src="scripts/location.js"></script>
     </body>
 </html>
